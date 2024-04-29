@@ -43,7 +43,7 @@ return {
 			end, {})
 			--vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, {})
 			vim.keymap.set("n", "rn", vim.lsp.buf.rename, {})
-			vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
+			vim.keymap.set({ "n", "v" }, "ca", vim.lsp.buf.code_action, {})
 		end,
 	},
 }
