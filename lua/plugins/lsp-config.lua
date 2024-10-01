@@ -29,7 +29,7 @@ return {
 			lspconfig.gopls.setup({
         capabilities = capabilities
       })
-			lspconfig.tsserver.setup({
+			lspconfig.ts_ls.setup({
         capabilities = capabilities
       })
 
