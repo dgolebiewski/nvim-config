@@ -15,3 +15,8 @@ vim.keymap.set('n', '<c-h>', ':wincmd h<CR>')
 vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
 
 vim.opt.clipboard = "unnamedplus"
+
+local pipepath = vim.fn.stdpath('cache') .. '/server.pipe'
+if not vim.loop.fs_stat(pipepath) then
+  vim.fn.serverstart(pipepath)
+end
