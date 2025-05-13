@@ -41,12 +41,12 @@ return {
       lspconfig.volar.setup({
         capabilities = capabilities
       })
-      lspconfig.prettier.setup({
+      lspconfig.gdscript.setup({})
+      lspconfig.svelte.setup({
         capabilities = capabilities
       })
-      lspconfig.gdscript.setup({
-        capabilities = capabilities
-      })
+      lspconfig.glsl_analyzer.setup({})
+      lspconfig.twiggy_language_server.setup({})
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
